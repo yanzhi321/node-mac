@@ -8,5 +8,6 @@
 
 ***
 ---
->reg-note-png
->![reg-png](./public/iamges/reg.png)
+------|------
+>reg-png
+![](./public/images/reg.png)
