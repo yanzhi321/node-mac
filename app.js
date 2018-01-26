@@ -13,6 +13,8 @@ const app = express()
 // const url = 'http://standards-oui.ieee.org/oui.txt'
 
 //icon -- https://github.com/theworkers/connect-favicons
+//made-icon => http://www.bitbug.net/
+
 app.use(favicons(__dirname + '/public/icons'));
 app.use(express.static(path.join(__dirname, '/public')));
 
