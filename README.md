@@ -4,9 +4,9 @@
 
 ### [oui.txt]: <http://standards-oui.ieee.org/oui.txt> "website txt" ###
 
-* [reg-url]: <http://tool.oschina.net/uploads/apidocs/jquery/regexp.html> 
+### [reg-url]: <http://tool.oschina.net/uploads/apidocs/jquery/regexp.html> ###
 
 ***
 ---
 >reg-note-png
->![Alt text](/public/iamges/reg.png)
+>![reg-png](./public/iamges/reg.png)
