@@ -1,13 +1,20 @@
 const express = require('express')
-const app = express()
-
-// http://standards-oui.ieee.org/oui.txt
 
 const fs = require('fs')
 const path = require('path')
 const request = require('request')
+const http = require('http')
+const favicons = require('connect-favicons');
 
-const url = 'http://standards-oui.ieee.org/oui.txt'
+const app = express()
+
+
+// http://standards-oui.ieee.org/oui.txt
+// const url = 'http://standards-oui.ieee.org/oui.txt'
+
+//icon -- https://github.com/theworkers/connect-favicons
+app.use(favicons(__dirname + '/public/icons'));
+app.use(express.static(path.join(__dirname, '/public')));
 
 
 app.get('/', function (req, res) {
@@ -195,7 +202,7 @@ app.get('/home', function(req, res){
 const obj = path.parse('./test.txt');
 //console.log(obj)
 
-const obj2 = path.parse(url)
+//const obj2 = path.parse(url)
 //console.log(obj2)
 
 let url2 = path.format({
