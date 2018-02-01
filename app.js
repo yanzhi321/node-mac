@@ -183,9 +183,10 @@ app.get('/home', function(req, res){
     let data = fs.readFileSync('./test2.json');
     //let myStr = data.toString();
     //console.log(myStr, 'myStr')
-
+    let str = '11111'
     let obj = JSON.parse(data)
     let objList = obj.listMac
+    res.send(data.toString())
     //console.log(objList.length, 'obj')
 
     // let aa = []
@@ -297,7 +298,7 @@ app.get('/testFile', function(req, res){
 
 
 
-app.listen(3000)
+app.listen(3010)
 
 console.log('the port is listening at 3000')
 

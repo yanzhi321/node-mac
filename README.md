@@ -10,4 +10,4 @@
 ---
 ------|------
 >reg-png
-![](./public/images/reg.png)
+![reg-png](./public/images/reg.png)

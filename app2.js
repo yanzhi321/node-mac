@@ -215,6 +215,14 @@ app.get('/fileWrite', function(req, res){
 
 })
 
+const HomePage = fs.readFileSync('./index.html');
+//index.html
+app.get('/getHtml', function(req, res){
+	res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/html');
+    res.end(HomePage);
+})
+
 //listen
 app.listen(3001, function(){
 	console.log('app is listening at 3001')
